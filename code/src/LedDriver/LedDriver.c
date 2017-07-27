@@ -36,9 +36,10 @@ static uint16_t ledsImage;
 
 void LedDriver_Create(uint16_t * address)
 {
+    *address = 0;
     ledsAddress = address;
-    ledsImage = ALL_LEDS_OFF;
-    *ledsAddress = ledsImage;
+    //ledsImage = ALL_LEDS_OFF;
+    //*ledsAddress = ledsImage;
 }
 
 void LedDriver_Destroy(void)
@@ -73,11 +74,12 @@ static void setLedImageBit(int ledNumber)
 }
 void LedDriver_TurnOn(int ledNumber)
 {
-    if (IsLedOutOfBounds(ledNumber))
+    *ledsAddress = 1;
+    /*if (IsLedOutOfBounds(ledNumber))
         return;
 
     setLedImageBit(ledNumber);
-    updateHardware();
+    updateHardware();*/
 }
 
 static void clearLedImageBit(int ledNumber)
@@ -86,11 +88,12 @@ static void clearLedImageBit(int ledNumber)
 }
 void LedDriver_TurnOff(int ledNumber)
 {
-    if (IsLedOutOfBounds(ledNumber))
+    *ledsAddress = 0;
+    /*if (IsLedOutOfBounds(ledNumber))
         return;
 
     clearLedImageBit(ledNumber);
-    updateHardware();
+    updateHardware();*/
 }
 
 void LedDriver_TurnAllOn(void)

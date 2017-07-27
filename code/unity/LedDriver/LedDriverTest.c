@@ -29,7 +29,7 @@
 #include "LedDriver.h"
 #include "RuntimeErrorStub.h"
 
-
+#if 1
 TEST_GROUP(LedDriver);
 static uint16_t virtualLeds;
 TEST_SETUP(LedDriver)
@@ -162,6 +162,7 @@ TEST(LedDriver, AllOff)
     LedDriver_TurnAllOff();
     TEST_ASSERT_EQUAL_HEX16(0, virtualLeds);
 }
+#endif
 
 /*
  * Intermediate examples below this comment
@@ -262,8 +263,7 @@ TEST(LedDriver, OutOfBoundsLedsAreAlwaysOff)
 #endif
 
 #if 0 
-#include "unity_fixture.h"
-TEST_GROUP(LedDriver);
+TEST_GROUP(LedDriver)
 
 TEST_SETUP(LedDriver)
 {

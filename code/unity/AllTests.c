@@ -27,14 +27,14 @@
 #include "unity_fixture.h"
 
 
-#if 0 
+#if 1 
 static void RunAllTests(void)
 {
     RUN_TEST_GROUP(LedDriver);
 }
 #endif 
 
-#if 1 
+#if 0 
 static void RunAllTests(void)
 {
     RUN_TEST_GROUP(sprintf);
