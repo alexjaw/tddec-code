@@ -32,8 +32,8 @@ TEST_SRC_DIRS = \
 	$(PROJECT_TEST_DIR)/stdio\
 	$(UNITY_HOME)/unity\
 	$(UNITY_HOME)/src\
-    $(UNITY_HOME)/extras/fixture/src\
-    $(UNITY_HOME)/extras/fixture/test\
+	$(UNITY_HOME)/extras/fixture/src\
+	$(UNITY_HOME)/extras/fixture/test\
 
 MOCKS_SRC_DIRS = \
 	$(PROJECT_TEST_DIR)/mocks\

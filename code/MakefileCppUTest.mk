@@ -53,13 +53,15 @@ MOCKS_SRC_DIRS = \
 	
 CPPUTEST_WARNINGFLAGS += -Wall 
 CPPUTEST_WARNINGFLAGS += -Wswitch-default 
-CPPUTEST_WARNINGFLAGS += -Werror 
+#CPPUTEST_WARNINGFLAGS += -Werror 
 CPPUTEST_WARNINGFLAGS += -Wno-format-nonliteral
 CPPUTEST_WARNINGFLAGS += -Wno-sign-conversion 
 CPPUTEST_WARNINGFLAGS += -Wno-pedantic 
 CPPUTEST_WARNINGFLAGS += -Wno-shadow
 CPPUTEST_WARNINGFLAGS += -Wno-missing-field-initializers
 CPPUTEST_WARNINGFLAGS += -Wno-unused-parameter
+CPPUTEST_WARNINGFLAGS += -Wno-c++14-compat
+#CPPUTEST_WARNINGFLAGS += -Wno-error
 #CPPUTEST_CFLAGS = -std=c89 
 CPPUTEST_CFLAGS += -Wall
 CPPUTEST_CFLAGS += -Wstrict-prototypes
