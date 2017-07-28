@@ -14,7 +14,6 @@ PROJECT_HOME_DIR = .
 CPP_PLATFORM = Gcc
 
 SRC_DIRS = \
-	$(PROJECT_HOME_DIR)/src/LedDriver \
 	$(PROJECT_HOME_DIR)/src/AmpDriver \
 
 TEST_SRC_DIRS = \
@@ -24,7 +23,6 @@ TEST_SRC_DIRS = \
 INCLUDE_DIRS =\
   .\
   $(CPPUTEST_HOME)/include\
-  $(PROJECT_HOME_DIR)/include/LedDriver\
   $(PROJECT_HOME_DIR)/include/AmpDriver\
   
 #CPPUTEST_WARNINGFLAGS += -pedantic-errors -Wconversion -Wshadow  -Wextra
